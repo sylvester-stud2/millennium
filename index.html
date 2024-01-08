@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />  
+    <link rel="stylesheet" href="mobile.css" />  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.come/a076d05399.js"></script>
+  
+    <title>Millenium Combined School</title>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+      <div href="#" class ="logo">
+        <img src="logo.jpeg" alt="Millenium Combined School" />
+        Millenium Combined School
+      </div>
+      <input type="checkbox" id="menu-bar" />
+      <label for="menu-bar" class="menu-icon">
+        <img src="bars.svg" alt="menu icon" style = "width: 40px; height:40px" />
+      </label>
+      <nav class = "navbar">
+        <ul>
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "#">About us</a>
+            <ul>
+              <a href="history.html">
+                <div class="menu-item">
+                  <li><img src="history.svg" alt="history Icon">
+                    History</li>
+                </div>
+              
+            </a>
+            <a href="team.html">
+                <div class="menu-item">
+                    <img src="team.svg" alt="team Icon">
+                    <li>Team(SMT)</li>
+                </div>
+            </a>
+            
+            <a href="contacts.html">
+                <div class="menu-item">
+                    <img src="contacts.svg" alt="contacts Icon">
+                    <li>Contacts</li>
+                </div>
+                
+            </a>
+            </ul>
+          
+          
+          </li>
+          <li><a href = "applications.html" target = "_blank">Applications</a></li>
+          <li><a href = "https://maps.app.goo.gl/jbsi4pxgm3oooPeQ8">directions</a></li>
+        </ul>
+
+
+
+      </nav>
+
+    </header>
+ 
+  
+
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+    
+   <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .slideshow-container {
+      position: relative;
+      background: #f1f1f1f1;
+      height: 100%;
+    }
+    .slide {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .active {
+      display: block;
+    }
+    .slide img {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(99, 220, 236, 0);
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the element's own size */
+    width: auto; /* Adjust width as needed */
+    text-align: center;
+    opacity: 1; /* Set opacity to 1 for visibility */
+    transition: opacity 1s;
+  
+  }
+  
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    .dot-container {
+      text-align: center;
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+    }
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .active-dot, .dot:hover {
+      background-color: #717171;
+    }
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Add this to your existing CSS or style.css file */
+/* Add this to your existing CSS or style.css file */
+
+/* Blog/Updates Section */
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    margin-top: 20px;
+    min-height: 100vh;
+  }
+
+  
+
+  .post {
+    width: 45%; /* Adjust this value as needed */
+    margin-bottom: 20px; /* Space between rows */
+    background-color: #fff; /* White background for each article */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px; /* Rounded corners for each post */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: 0.3s; /* Animation to hover */
+    position: relative; /* Needed for line positioning */
+    box-sizing: border-box;
+  }
+
+  .post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 70px;
+    color: #fff; /* White title color */
+    background-color: #307077; /* Dark blue title background color */
+    padding: 10px 20px; /* Padding for the title */
+    border-radius: 5px; /* Rounded corners for title */
+  }
+
+  .blog h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00796b; /* Dark green color for headings */
+  }
+
+  .blog time {
+    font-style: italic;
+    color: #004d40; /* Dark green color for date */
+  }
+
+  .blog p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .blog p:last-child {
+    font-style: italic;
+    color: #555; /* Dark gray color for author name */
+  }
+
+  .blur {
+    filter: blur(5px);
+  }
+
+  .no-blur {
+    filter: none;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px; /* Adjust as needed */
+    background-color: blue; /* Blue line color */
+    width: 0;
+    transition: width 2s; /* Animation duration */
+  }
+
+  .post:active .line {
+    width: 100%; /* Full width on click */
+  }
+  .updates-section {
+      text-align: center; /* Center the text */
+      padding: 20px 0; /* Add some padding */
+     
+    }
+
+    /* Add glow effect for the text */
+    .updates-section h2 {
+      color: #000000; /* Text color */
+      text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; /* Text shadow for glowing effect */
+      animation: glow-text 3s linear infinite alternate; /* Apply the glow animation to the text */
+    }
+
+    .makec{
+      background-color: rgb(146, 240, 209);
+      padding: 0;
+    }
+
+    /* Add animation for text glow */
+    @keyframes glow-text {
+      0% {
+        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; /* Initial glow effect */
+      }
+      100% {
+        text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua; /* Final glow effect */
+      }
+    }
+  @media screen and (max-width: 768px) {
+    
+      .post {
+        width: 100%; /* Occupy full width of the container */
+        margin-bottom: 20px; /* Adjust space between posts */
+      }
+    }
+
+
+  </style>
+  
+  
+  
+  <div class="slideshow-container">
+  
+  
+  
+  <div class="slide fade">
+    <img src="slide1.JPG" alt="Slide 1">
+    <div class="text">
+     
+  
+  </div>
+  </div>
+  
+  <div class="slide fade">
+    <img src="slide2.JPG" alt="Slide 2">
+    <div class="text">
+      
+    </div>
+  </div>
+  
+  <div class="slide fade">
+      <img src="slide3.JPG" alt="Slide 3">
+      <div class="text">
+  
+      
+      </div>
+    </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <!-- Add more dots as needed -->
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+
+
+
+
+
+
+
+
+
+
+  
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slide");
+    var dots = document.getElementsByClassName("dot");
+    var texts = document.getElementsByClassName("text");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        texts[i].style.opacity = 0;
+        texts[i].style.transform = "translateX(-100%)";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active-dot", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    texts[slideIndex-1].style.opacity = 1;
+    texts[slideIndex-1].style.transform = "translateX(0)";
+    dots[slideIndex-1].className += " active-dot";
+  }
+  
+  // Set the interval for the slides to change every 3 seconds
+  var slideInterval = setInterval(function() { plusSlides(1); }, 3000);
+
+
+
+
+
+
+
+
+
+function toggleBlur(id) {
+  var content = document.getElementById(id);
+  if (content.classList.contains('blur')) {
+    content.classList.remove('blur');
+    content.classList.add('no-blur');
+  } else {
+    content.classList.remove('no-blur');
+    content.classList.add('blur');
+  }
+}
+
+
+  </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class = "streams">
+     
+        <div class = "title">
+            <h2 style ="color : creamwhite; width: 100%;">Our Streams</h2>
+        </div>
+        
+       
+    <div class="streams-s">
+     <div class = "box">
+        <div class = "card">
+            <img src="flask-vial-solid.svg" alt="flask Icon" class="icon">
+            
+            <h5 style = "color:aliceblue";>Science</h5>
+            <div class="pra">
+                <p>
+                    <ol class = "clist" style = "color:aliceblue";>
+                        <li>Mathematics</li>
+                        <li>Physical Science</li>
+                        <li>Life Sciences</li>
+                        
+                    </ol>
+                </p>
+            </div>
+            
+                <p style ="text-align:center;" ><a class = "btton" href = "s.pdf" target="_blank">Read More</a></p>
+            </div>
+        </div>
+    
+        <div class = "box">
+            <div class = "card">
+                <img src="business-time-solid.svg" alt="case Icon" class="icon">
+                
+                <h5 style = "color:aliceblue";>Commerce</h5>
+                <div class="pra">
+                    <p>
+                        <ol class = "clist"style = "color:aliceblue";>
+                            <li>Accounting</li>
+                            <li>Business Studies</li>
+                            <li>Economics</li>
+                            
+                        </ol>
+                    </p>
+                </div>
+                
+                    <p style ="text-align:center;" ><a class = "btton" href = "c.pdf" target="_blank">Read More</a></p>
+                </div>
+            </div>
+        
+
+            <div class = "box">
+                <div class = "card">
+                    <img src="tractor-solid.svg" alt="Tractor Icon" class="icon">
+
+                    
+                    <h5 style = "color:aliceblue";>General</h5>
+                    <div class="pra">
+                        <p>
+                            <ol class = "clist" style = "color:aliceblue";>
+                                <li>Argriculture</li>
+                                <li>Hospitality</li>
+                                <li>Geography</li>
+                        
+                                
+                            </ol>
+                        </p>
+                    </div>
+                        <p style ="text-align:center;" >
+                            <a class = "btton" href = "h.pdf" target="_blank">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+          <div class="makec">
+            <div class="updates-section">
+                <h2>Updates!</h2>
+              </div>
+            <section class="blog">
+              
+              
+              <article class="post" onclick="addLine()">
+                <div class="line"></div>
+                <h3 onclick="toggleBlur('post1')">2024 Registration </h3>
+                <div id="post1" class="content blur" onclick="toggleBlur('post1')">
+                  <time datetime="2024-01-06">January 6, 2024</time>
+                  <p>
+                    Good day, be informed that registration will commence from the
+                    <strong>11th Jan</strong> to <strong>9th Feb 2024</strong>.
+                  </p>
+                  <p>Author: Tsiri Moloko</p>
+                </div>
+              </article>
+            
+              <article class="post" onclick="addLine()">
+                <div class="line"></div>
+                <h3 onclick="toggleBlur('post2')">Death Notice </h3>
+                <div id="post2" class="content blur" onclick="toggleBlur('post2')">
+                  <time datetime="2023-12-15">December 15, 2023</time>
+                  <p>
+                    A very sad day that we have lost one of out staff members Doctor Rametsi,
+                  </p>
+                  <br>
+                  <p>The memorial will be held at the school hall of the<strong>7th January 2024</strong></p>
+                  <p>Author: Tladi Simone</p>
+                </div>
+              </article>
+            
+              <article class="post">
+                <h3 onclick="toggleBlur('post3')">Important Conference Announcement</h3>
+                <div id="post3" class="content blur" onclick="toggleBlur('post3')">
+                  <div class="line"></div>
+                  <time datetime="2024-02-20">February 20, 2024</time>
+                  <p>
+                    We are excited to announce our upcoming conference on the advancements in technology and its impact on society.
+                  </p>
+                  <br>
+                  <p>The conference will take place from <strong>March 15th</strong> to <strong>March 18th, 2024</strong> at the Convention Center.</p>
+                  <p>Author: Alfred Smith</p>
+                </div>
+              </article>
+              
+              <article class="post">
+                <h3 onclick="toggleBlur('post4')">Term 2 Award Ceremony</h3>
+                <div id="post4" class="content blur" onclick="toggleBlur('post4')">
+                  <div class="line"></div>
+                  <time datetime="2024-03-10">March 10, 2024</time>
+                  <p>
+                    Exciting news! We are thrilled to announce that the Term 2 awards will be issued on the <strong>14th April 2024</strong>
+                  </p>
+            
+                  <p>Author: Emihle Velankulu</p>
+                </div>
+              </article>
+              
+            
+              <!-- Add more articles for additional updates -->
+          </section>
+
+
+          </div>
+            
+       
+
+             
+          </div> 
+            
+           
+            <div class = "container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.6562055497584!2d29.403032375191085!3d-23.866338878591492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72765728be937%3A0x6de95d766ab74ded!2sMillennium%20Combined%20School!5e0!3m2!1sen!2sza!4v1702139374104!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+
+
+
+     
+
+
+     <footer style="background-color: rgb(11, 11, 11); display: flex; align-items: center; padding-bottom: 10px; margin-top: 0; overflow: auto; ">
+        <div style="color: whitesmoke; margin-right: 10px;">
+            <p style="margin: 0;">Web developer - Moloko Tsiri</p>
+            <div style="display: flex; align-items: center; margin: 0;">
+                <img src="copyright-regular.svg" alt="CopyRight Icon" style="margin-right: 5px; width: 16px; height: 16px;">
+                <p style="margin: 0;">CopyRight By Tsiri Moloko</p>
+            </div>
+        </div>
+        <div class="social" style="margin: 0; padding-bottom: 15px;">
+            <a href="https://github.com/sylvester-stud2">
+                <img src="github.svg" alt="github Icon" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+    </footer>
+    
+    
+    
+    
+    
+  </body>
+</html>

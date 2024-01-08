@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+
+<style>
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #090909; /* Light blue background */
+    margin-top: 20px;
+    max-height: 1000vh;
+  }
+
+  
+
+  .post {
+    width: 45%; /* Adjust this value as needed */
+    margin-bottom: 20px; /* Space between rows */
+    background-color: #fff; /* White background for each article */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px; /* Rounded corners for each post */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: 0.3s; /* Animation to hover */
+    position: relative; /* Needed for line positioning */
+    box-sizing: border-box;
+  }
+
+  .post:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+  }
+
+  .blog h2 {
+    font-size: 24px;
+    margin-bottom: 70px;
+    color: #fff; /* White title color */
+    background-color: #307077; /* Dark blue title background color */
+    padding: 10px 20px; /* Padding for the title */
+    border-radius: 5px; /* Rounded corners for title */
+  }
+
+  .blog h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00796b; /* Dark green color for headings */
+  }
+
+  .blog time {
+    font-style: italic;
+    color: #004d40; /* Dark green color for date */
+  }
+
+  .blog p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .blog p:last-child {
+    font-style: italic;
+    color: #555; /* Dark gray color for author name */
+  }
+
+  .blur {
+    filter: blur(5px);
+  }
+
+  .no-blur {
+    filter: none;
+  }
+
+  .line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px; /* Adjust as needed */
+    background-color: blue; /* Blue line color */
+    width: 0;
+    transition: width 2s; /* Animation duration */
+  }
+
+  .post:active .line {
+    width: 100%; /* Full width on click */
+  }
+
+  @media screen and (max-width: 900px) {
+    .blog,
+      footer {
+        
+        max-height: 1000vh;
+      }
+
+      .post {
+        width: 100%; /* Occupy full width of the container */
+        margin-bottom: 20px; /* Adjust space between posts */
+      }
+    }
+    
+</style>
+
+
+</style>
+
+<script>
+  function toggleBlur(id) {
+    var element = document.getElementById(id);
+    if (element.classList.contains('blur')) {
+      element.classList.remove('blur');
+      element.classList.add('no-blur');
+    } else {
+      element.classList.remove('no-blur');
+      element.classList.add('blur');
+    }
+  }
+
+ 
+</script>
+
+
+<section class="blog">
+  <article class="post" onclick="addLine()">
+    <div class="line"></div>
+    <h3 onclick="toggleBlur('post1')">2024 Registration </h3>
+    <div id="post1" class="content blur" onclick="toggleBlur('post1')">
+      <time datetime="2024-01-06">January 6, 2024</time>
+      <p>
+        Good day, be informed that registration will commence from the
+        <strong>11th Jan</strong> to <strong>9th Feb 2024</strong>.
+      </p>
+      <p>Author: [Author Name]</p>
+    </div>
+  </article>
+
+  <article class="post" onclick="addLine()">
+    <div class="line"></div>
+    <h3 onclick="toggleBlur('post2')">Death Notice </h3>
+    <div id="post2" class="content blur" onclick="toggleBlur('post2')">
+      <time datetime="2023-12-15">December 15, 2023</time>
+      <p>
+        A very sad day that we have lost one of out staff members Doctor Rametsi,
+      </p>
+      <br>
+      <p>The memorial will be held at the school hall of the<strong>7th January 2024</strong></p>
+      <p>Author: [Author Name]</p>
+    </div>
+  </article>
+
+  <article class="post">
+    <h3 onclick="toggleBlur('post3')">Important Conference Announcement</h3>
+    <div id="post3" class="content blur" onclick="toggleBlur('post3')">
+      <div class="line"></div>
+      <time datetime="2024-02-20">February 20, 2024</time>
+      <p>
+        We are excited to announce our upcoming conference on the advancements in technology and its impact on society.
+      </p>
+      <br>
+      <p>The conference will take place from <strong>March 15th</strong> to <strong>March 18th, 2024</strong> at the Convention Center.</p>
+      <p>Author: [Author Name]</p>
+    </div>
+  </article>
+  
+  <article class="post">
+    <h3 onclick="toggleBlur('post4')">Term 2 Award Ceremony</h3>
+    <div id="post4" class="content blur" onclick="toggleBlur('post4')">
+      <div class="line"></div>
+      <time datetime="2024-03-10">March 10, 2024</time>
+      <p>
+        Exciting news! We are thrilled to announce that the Term 2 awards will be issued on the <strong>14th April 2024</strong>
+      </p>
+
+      <p>Author: [Author Name]</p>
+    </div>
+  </article>
+  
+
+  <!-- Add more articles for additional updates -->
+</section>
+
+
+<footer style="background-color: rgb(11, 11, 11); display: flex; align-items: center; padding: 10px;">
+  <div style="color: whitesmoke; margin-right: 10px;">
+      <p style="margin: 0;">Web developer - Moloko Tsiri</p>
+      <div style="display: flex; align-items: center; margin: 0;">
+          <img src="copyright-regular.svg" alt="CopyRight Icon" style="margin-right: 5px; width: 16px; height: 16px;">
+          <p style="margin: 0;">CopyRight By Tsiri Moloko</p>
+      </div>
+  </div>
+  <div class="social" style="margin: 0; padding-bottom: 15px;">
+      <a href="https://github.com/sylvester-stud2">
+          <img src="github.svg" alt="github Icon" style="width: 24px; height: 24px;">
+      </a>
+  </div>
+</footer>
+
+
+</body>
+</html>
