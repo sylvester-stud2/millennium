@@ -1,11 +1,94 @@
-@media only screen and (max-width: 990px) {
+
+@media only screen and (max-width: 1300px) {
     .logo{
         padding-left: 5px;
     }
-   header{
-    padding: 20px ;
-   } 
+    .slide img {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+      }
 
+      header .navbar ul li a{
+        font-size: 15px;
+        padding: 10px;
+        color: aqua;
+        display: block;
+    }
+
+   
+
+}
+
+@media only screen and (max-width: 1180px) {
+    .logo{
+        padding-left: 5px;
+    }
+    .slide img {
+        width: 100%;
+        height: 100%;
+        padding-top: 10px;
+      }
+
+      header .navbar ul li a{
+        font-size: 15px;
+       
+        color: aqua;
+        display: block;
+    }
+
+   
+
+}
+
+
+
+@media only screen and (max-width: 1045px) {
+    .logo{
+        padding-left: 5px;
+    }
+   
+
+   header .logo{
+   
+    font-size: 20px;
+   
+}
+
+
+header .navbar ul li a{
+    font-size: 15px;
+  
+    color: aqua;
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+
+header .navbar ul li a:hover{
+    background: gray;
+    color:#fff;
+}
+header .navbar ul li ul{
+    position:absolute;
+    left:0;
+    width:200px;
+    background: #000000;
+    display: none;
+}
+
+
+   
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
    header label{
     display: initial;
    }
