@@ -159,12 +159,12 @@
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for the element's own size */
-    width: auto; /* Adjust width as needed */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: auto; 
     text-align: center;
-    opacity: 1; /* Set opacity to 1 for visibility */
+    opacity: 1;
     transition: opacity 1s;
   
   }
@@ -209,10 +209,6 @@
 
 
 
-    /* Add this to your existing CSS or style.css file */
-/* Add this to your existing CSS or style.css file */
-
-/* Blog/Updates Section */
 .blog {
     display: flex;
     flex-wrap: wrap;
@@ -227,40 +223,40 @@
   
 
   .post {
-    width: 45%; /* Adjust this value as needed */
-    margin-bottom: 20px; /* Space between rows */
-    background-color: #fff; /* White background for each article */
+    width: 45%; 
+    margin-bottom: 20px; 
+    background-color: #fff; 
     padding: 20px;
     margin: 10px;
-    border-radius: 15px; /* Rounded corners for each post */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect */
-    transition: 0.3s; /* Animation to hover */
-    position: relative; /* Needed for line positioning */
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    transition: 0.3s; 
+    position: relative; 
     box-sizing: border-box;
   }
 
   .post:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
   }
 
   .blog h2 {
     font-size: 24px;
     margin-bottom: 70px;
-    color: #fff; /* White title color */
-    background-color: #307077; /* Dark blue title background color */
-    padding: 10px 20px; /* Padding for the title */
-    border-radius: 5px; /* Rounded corners for title */
+    color: #fff;
+    background-color: #307077; 
+    padding: 10px 20px; 
+    border-radius: 5px;
   }
 
   .blog h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #00796b; /* Dark green color for headings */
+    color: #00796b; 
   }
 
   .blog time {
     font-style: italic;
-    color: #004d40; /* Dark green color for date */
+    color: #004d40; 
   }
 
   .blog p {
@@ -270,7 +266,7 @@
 
   .blog p:last-child {
     font-style: italic;
-    color: #555; /* Dark gray color for author name */
+    color: #555;
   }
 
   .blur {
@@ -285,26 +281,26 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 5px; /* Adjust as needed */
-    background-color: blue; /* Blue line color */
+    height: 5px; 
+    background-color: blue; 
     width: 0;
-    transition: width 2s; /* Animation duration */
+    transition: width 2s;
   }
 
   .post:active .line {
-    width: 100%; /* Full width on click */
+    width: 100%; 
   }
   .updates-section {
-      text-align: center; /* Center the text */
-      padding: 20px 0; /* Add some padding */
+      text-align: center; 
+      padding: 20px 0; 
      
     }
 
-    /* Add glow effect for the text */
+   
     .updates-section h2 {
-      color: #000000; /* Text color */
-      text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; /* Text shadow for glowing effect */
-      animation: glow-text 3s linear infinite alternate; /* Apply the glow animation to the text */
+      color: #000000; 
+      text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; 
+      animation: glow-text 3s linear infinite alternate;
     }
 
     .makec{
@@ -315,17 +311,17 @@
     /* Add animation for text glow */
     @keyframes glow-text {
       0% {
-        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; /* Initial glow effect */
+        text-shadow: 0 0 10px aqua, 0 0 20px aqua, 0 0 30px aqua; 
       }
       100% {
-        text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua; /* Final glow effect */
+        text-shadow: 0 0 20px aqua, 0 0 30px aqua, 0 0 40px aqua; 
       }
     }
   @media screen and (max-width: 768px) {
     
       .post {
-        width: 100%; /* Occupy full width of the container */
-        margin-bottom: 20px; /* Adjust space between posts */
+        width: 100%; 
+        margin-bottom: 20px; 
       }
     }
 
