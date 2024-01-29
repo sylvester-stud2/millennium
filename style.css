@@ -140,7 +140,7 @@ header .navbar ul li:hover > ul{
 
 
 
-.about jpeg{
+/* .about jpeg{
     height: auto;
     width: 430px;
 
@@ -155,7 +155,7 @@ header .navbar ul li:hover > ul{
     display:flex;
     align-items: center;
     justify-content: space-around;
-}
+} */
 
 .btton {
     display: inline-block;
@@ -287,7 +287,7 @@ h5{
 }
 
 
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
 }
@@ -301,21 +301,21 @@ h5{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
-
-.dropdown-content a {
+ */
+/* .dropdown-content a {
     color: aqua;
-    padding: 8px 16px; /* Adjusted padding to reduce vertical space */
+    padding: 8px 16px; 
     text-decoration: none;
     display: block;
-}
+} */
 
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
     background-color: whitesmoke;
-}
+} */
 
-.dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown content on hover */
-  }
+/* .dropdown:hover .dropdown-content {
+    display: block; 
+  } */
 
 /* Additional CSS for alignment */
 .menu-item {
